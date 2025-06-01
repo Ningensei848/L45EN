@@ -1,4 +1,7 @@
 {
   "spellcheck": false,
-  "vimMode": false
+  "vimMode": false,
+  "attachmentFolderPath": "/",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Chaos"
 }

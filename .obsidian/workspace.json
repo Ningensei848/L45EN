@@ -4,31 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "eb204b9220e717e9",
+        "id": "a58c4c0d9c367aa7",
         "type": "tabs",
         "children": [
           {
-            "id": "eb94d5a3ee7dccaf",
+            "id": "8698c3f639787945",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Welcome.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/app.json",
+                "bFile": ".obsidian/app.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Welcome"
+              "icon": "diff",
+              "title": "Diff: app.json"
             }
           }
         ]
@@ -88,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 214.5
   },
   "right": {
     "id": "68e815363183d913",
@@ -186,11 +176,27 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "e22a668aa979ed58",
   "lastOpenFiles": [
-    "Welcome.md"
+    "Daily/2025/06/01_Lost Love, Wet, and Wobbling.md",
+    "Welcome.md",
+    "Template/dailyNote.md",
+    "Daily/2025/06/01fgdsf.md",
+    "Untitled.canvas",
+    "Untitled.md",
+    "Template",
+    "Daily/2025/06/01.md.md",
+    "Daily/2025/06",
+    "Untitled",
+    "Daily/2025",
+    "Daily",
+    "Inbox",
+    "Chaos",
+    "test/Obsidian.md",
+    "test"
   ]
 }

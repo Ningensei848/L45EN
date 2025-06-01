@@ -1,2 +1,2 @@
 
-This is my first note in Obsidian.
+This is my first note in [[Obsidian]].
