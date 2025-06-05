@@ -1,0 +1,28 @@
+name: Update Obsidian Config
+on:
+  schedule:
+    - cron: '11 2 1 * *'  # 毎月1日の11:11に実行
+
+jobs:
+  update-settings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Caching pip dependencies
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+
+      - name: Run script to update daily notes
+        run: python ./.script/python/update_daily_notes.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .obsidian/workflows/daily-notes.json
+          git commit -m "[Tweak] daily notes folder for new month"
+          git push
