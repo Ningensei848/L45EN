@@ -259,8 +259,7 @@ dist
 # config dir
 # .obsidian/
 # OR only to exclude workspace cache
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
+.obsidian/workspace*.json
 .obsidian/plugins/recent-files-obsidian/data.json
 .obsidian/appearance.json
 
