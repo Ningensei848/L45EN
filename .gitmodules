@@ -1,6 +1,12 @@
 [submodule ".obsidian"]
 	path = .obsidian
 	url = git@github.com:Ningensei848/.obsidian.git
+	branch = main
+	update = rebase
+	ignore = none
 [submodule "Shared/User/Ningensei848"]
 	path = Shared/User/Ningensei848
 	url = git@github.com:Ningensei848/Ningensei848.git
+	branch = main
+	update = rebase
+	ignore = none
