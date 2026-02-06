@@ -339,6 +339,7 @@ try {
   # 5) サブモジュールの安全運用
   "submodule.recurse"        = "false";
   "fetch.recurseSubmodules"  = "on-demand";
+  "push.recurseSubmodules"   = "on-demand";
   "diff.submodule"           = "log";
   "status.submoduleSummary"  = "true";
   }

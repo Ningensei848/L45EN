@@ -157,7 +157,7 @@ if [ -f ".gitmodules" ]; then
   fi
 
   log_cli "Update submodules to remote tracked branches (recursive, jobs=$SUBMODULE_JOBS)."
-  if ! $GIT_EXE submodule update --init --remote --recursive --checkout --jobs "$SUBMODULE_JOBS" >/dev/null 2>&1; then
+  if ! $GIT_EXE submodule update --init --remote --recursive --merge --checkout --jobs "$SUBMODULE_JOBS" >/dev/null 2>&1; then
     warn "submodule update --remote failed."
     hint "Try:\n  git submodule update --recursive --remote --progress\nIf branches are missing in .gitmodules:\n  git config -f .gitmodules --list | findstr /C:branch\n  # Set: git config -f .gitmodules submodule.<name>.branch main\n  git submodule sync --recursive"
   fi

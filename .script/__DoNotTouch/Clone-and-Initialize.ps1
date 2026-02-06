@@ -450,13 +450,13 @@ try {
 try {
     if (-not $DryRun) {
         & $GitExe -C "$VaultPath" submodule sync --recursive
-        & $GitExe -C "$VaultPath" submodule update --init --recursive
+        & $GitExe -C "$VaultPath" submodule update --init --recursive --merge
         Write-Log INFO "サブモジュールの sync/update を実行しました。"
         & $GitExe -C "$VaultPath" -c user.name="Copilot" -c user.email="copilot@example.local" commit -m "Add: Submodules"
 
     } else {
         Write-Log INFO "[DryRun] 実行予定: git -C `"$VaultPath`" submodule sync --recursive"
-        Write-Log INFO "[DryRun] 実行予定: git -C `"$VaultPath`" submodule update --init --recursive"
+        Write-Log INFO "[DryRun] 実行予定: git -C `"$VaultPath`" submodule update --init --recursive --merge"
         Write-Log INFO "[DryRun] 実行予定: git -C `"$VaultPath`" commit -m `"Add: Submodules`""
     }
 } catch {

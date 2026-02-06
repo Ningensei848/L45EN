@@ -3,41 +3,47 @@ title: "<タイトルを設定してください>"
 date: {{date:YYYY-MM-DD}}
 tags:
   - daily
-aliases: ["{{date:YYYY年MM月DD日}}"]
+aliases:
+  - "{{date:YYYY年MM月DD日}}"
 ---
 
-  # {{date:YYYY年MM月DD日}} ({{date:dddd}})
+{{date:YYYY年MM月DD日}} ({{date:dddd}})
 
-  ## ✅ 今日の目標
+## 🔁 前回までのあらすじ
 
-- [ ] 主要タスク1
-	- タスクに対する補足説明
-- [ ] 主要タスク2
-	- これを行なうために必要なことは何か書き記す
+<% tp.user.daily.findPrevNote(tp, "📌 Next Action") %>
+
+## ✅ 今日の目標
+
+### 午前
+- [ ] …
+
+### 午後
+- [ ] …
 
 ## 📝 メモ
 
-- 今日の気づきやアイデアを書く
-- 
+- …
 
-## 📅 スケジュール
-
-- 午前：
-	- 
-- 午後：
-	- 
 
 ## 🔗 関連リンク
 
-- 
+- <% tp.user.daily.findPrevNote(tp) %>のデイリーノート
+- …
 
-## ✅ 振り返り
 
+## 🤔 振り返り
 
 - 良かったこと：
-	- 
+	- …
 - 改善点：
-	- 
+	- …
+
+
+## 📌 Next Action
+
+- …
+
 <%*
   // 1. Windows Username を取得
   let userId = process.env.USERNAME;

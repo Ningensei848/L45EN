@@ -173,7 +173,7 @@ function Run-SyncUpdate {
     }
 
     # update
-    $args = if ($Remote) { @('submodule','update','--remote','--recursive') } else { @('submodule','update','--recursive') }
+    $args = if ($Remote) { @('submodule','update','--remote','--recursive', '--merge') } else { @('submodule','update','--recursive', '--merge') }
     if ($DryRun) {
         Dry ("Would run: git {0}" -f ($args -join ' '))
     } else {
