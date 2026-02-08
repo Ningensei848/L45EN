@@ -17,10 +17,10 @@ aliases:
 
 ## 関連キーワード
 
-<!--
-  - [[関連語1]]
-  - [[関連語2]]
--->
+%%
+- [[関連語1]]
+- [[関連語2]]
+%%
 
 ---
 
@@ -53,7 +53,7 @@ if (!isUntitled(filename)){
 	  const leaf = process.env.USERPROFILE.split(/[\\/]/);
 		userId = leaf[leaf.length - 1];
     }
-  } 	
+  }
   // 3. それでもダメなら fallback
   if (!userId) {
 	userId = "unknown";

@@ -179,7 +179,7 @@ Set-HooksPath -repoPath $superRoot -hooksDirInSuper $hooksDir -DryRun:$DryRun
 
 # サブモジュールを初期化（未初期化がある場合）
 # DryRunでも実体を把握するため実行（対象把握精度を優先）
-Invoke-Git @('submodule', 'update', '--init', '--recursive') | Out-Null
+Invoke-Git @('submodule', 'update', '--init', '--recursive', '--merge') | Out-Null
 
 # 各サブモジュールのワークツリー絶対パスを取得（再帰）
 $lines = Invoke-Git @('submodule', 'foreach', '--recursive', 'git rev-parse --show-toplevel') 2>$null
